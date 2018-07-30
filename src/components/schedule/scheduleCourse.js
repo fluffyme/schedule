@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-
-export default class ScheduleCourse extends Component {
+class ScheduleCourse extends Component {
     render() {
         return (
             <div className="schedule-course">
@@ -10,3 +9,5 @@ export default class ScheduleCourse extends Component {
         );
     }
 }
+
+export default ScheduleCourse;
