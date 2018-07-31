@@ -3,4 +3,17 @@
     display: grid;
     grid-template-rows: 100px repeat(autofit, 1fr);
     grid-row-gap: 20px;
+
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-right: -50px;
+
+    &__title {
+        color: $color-blue;
+        font-family: $font-alegreya;
+        font-size: 35px;
+        font-weight: bold;
+        border-left: 2px solid $color-blue;
+        padding: 20px 40px;
+    }
 }
