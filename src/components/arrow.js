@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class Arrow extends Component {
+
   constructor(props) {
     super(props)
 
@@ -15,12 +16,11 @@ class Arrow extends Component {
 
     if(this.state.status) {
       //closes it
-      document.getElementById('this.id').classlist.remove('arrow-closed');
+      document.getElementById(this.id).classList.remove('arrow-closed');
 
     } else {
       //open
-      document.getElementById('this.id').classlist.add('arrow-closed');
-
+      document.getElementById(this.id).classList.add('arrow-closed');
     }
 
     this.setState({ status: !this.state.status })
@@ -30,7 +30,7 @@ class Arrow extends Component {
     this.id = `arrow-${this.props.id}`
 
       return (
-        <a id="this.id" onClick={() => this.toggleArrow()} className={`${this.props.className} arrow`}></a>
+        <a id={this.id} onClick={() => this.toggleArrow()} className={`${this.props.className} arrow`}></a>
       )
   }
 }

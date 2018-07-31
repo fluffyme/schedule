@@ -7,7 +7,7 @@ import LibraryCourse from './libraryCourse';
 class Library extends Component {
 
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchCourses()
     }
 

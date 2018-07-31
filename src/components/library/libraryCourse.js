@@ -18,19 +18,18 @@ class LibraryCourse extends Component {
 
     renderDescription = function() {
         if(!this.state.status) {
-            return (
-                <div className="library-course__description">
-                 <label>Course Description</label>
-                    <p>
-                    { this.props.description }
-                    </p>
-                </div>
-            )
+        
+            <div className="library-course__description">
+                <label>Course Description</label>
+                <p>
+                { this.props.description }
+                </p>
+            </div>   
         }     
         
     }.bind(this);
 
-    handleCallback = function (status) {
+    handleCallback = function(status) {
         this.setState({ status })
     }.bind(this);
 
@@ -47,7 +46,7 @@ class LibraryCourse extends Component {
                 
                     <Arrow callback={status => this.handleCallback(status)} id={this.props.id} className="library-course__arrow"/>
                     <Action onClick={()=> this.props.toggleEnrolled(this.props.id)}  className="library-course__action"/>
-                
+                    { this.renderDescription()}
             </div>
         );
     }
