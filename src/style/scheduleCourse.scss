@@ -1,14 +1,18 @@
 .schedule-course {
 
     display: grid;
-    grid-template-columns: 1fr 32px;
+    grid-template-columns: 1fr 32px 12px;
     grid-template-rows: 1fr;
 
     justify-items: center;
     align-items: center;
 
+    
+
 
     &__title {
+        
+
         grid-column: 1/2;
     }
 
